@@ -1,0 +1,29 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Transtype:</strong>
+  <%= @transaction.transType %>
+</p>
+
+<p>
+  <strong>Transmethod:</strong>
+  <%= @transaction.transMethod %>
+</p>
+
+<p>
+  <strong>Transdescription:</strong>
+  <%= @transaction.transDescription %>
+</p>
+
+<p>
+  <strong>Transaccoung:</strong>
+  <%= @transaction.transAccount %>
+</p>
+
+<p>
+  <strong>Transemployee:</strong>
+  <%= @transaction.transEmployee %>
+</p>
+
+<%= link_to 'Edit', edit_transaction_path(@transaction) %> |
+<%= link_to 'Back', transactions_path %>

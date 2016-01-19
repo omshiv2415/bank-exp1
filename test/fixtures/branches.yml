@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  branchLocation: MyString
+  branchCity: MyString
+  branchCounty: MyString
+  branchCode: MyString
+
+two:
+  branchLocation: MyString
+  branchCity: MyString
+  branchCounty: MyString
+  branchCode: MyString

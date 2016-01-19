@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  transType: MyString
+  transMethod: MyString
+  transDescription: MyString
+  transAccoung_id: 
+  transEmployee_id: 
+
+two:
+  transType: MyString
+  transMethod: MyString
+  transDescription: MyString
+  transAccoung_id: 
+  transEmployee_id: 
