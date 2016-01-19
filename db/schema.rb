@@ -64,13 +64,13 @@ ActiveRecord::Schema.define(version: 20160119123501) do
     t.string   "transType"
     t.string   "transMethod"
     t.string   "transDescription"
-    t.integer  "transAccount_id"
+    t.integer  "transAccoung_id"
     t.integer  "transEmployee_id"
     t.datetime "created_at",       null: false
     t.datetime "updated_at",       null: false
   end
 
-  add_index "transactions", ["transAccount_id"], name: "index_transactions_on_transAccoung_id"
+  add_index "transactions", ["transAccoung_id"], name: "index_transactions_on_transAccoung_id"
   add_index "transactions", ["transEmployee_id"], name: "index_transactions_on_transEmployee_id"
 
 end

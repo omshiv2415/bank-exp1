@@ -33,7 +33,7 @@
         <td><%= customer.cardnumber %></td>
         <td><%= customer.pin %></td>
 				<td><%= customer.created_at %></td><br/>
-				<td><%= customer.balance %></td>
+				<td><%= customer.accountBalance %></td>
         <td><%= link_to 'Show', customer %></td>
         <td><%= link_to 'Edit', edit_customer_path(customer) %></td>
         <td><%= link_to 'Destroy', customer, method: :delete, data: { confirm: 'Are you sure?' } %></td>
