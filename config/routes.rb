@@ -1,9 +1,11 @@
 Rails.application.routes.draw do
+  resources :customers
+  resources :bankcustomers
+  resources :customers
   resources :employees
   resources :transactions
   resources :branches
   resources :accounts
-  resources :customers
 
 	root 'welcome#index'
   # The priority is based upon order of creation: first created -> highest priority.

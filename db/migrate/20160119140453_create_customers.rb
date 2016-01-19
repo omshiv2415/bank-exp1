@@ -4,12 +4,13 @@ class CreateCustomers < ActiveRecord::Migration
       t.string :name
       t.text :email
       t.text :address
-      t.string :phone
-      t.string :accountnumber
+      t.string :phoneNo
+      t.string :accounNumber
+      t.float :balance
       t.date :dob
-      t.string :cardnumber
+      t.string :cardNumber
       t.string :pin
-			t.string :balance
+
       t.timestamps null: false
     end
   end

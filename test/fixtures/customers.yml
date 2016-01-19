@@ -4,18 +4,20 @@ one:
   name: MyString
   email: MyText
   address: MyText
-  phone: MyString
-  accountnumber: MyString
-  dob: 2016-01-18
-  cardnumber: MyString
+  phoneNo: MyString
+  accounNumber: MyString
+  balance: 1.5
+  dob: 2016-01-19
+  cardNumber: MyString
   pin: MyString
 
 two:
   name: MyString
   email: MyText
   address: MyText
-  phone: MyString
-  accountnumber: MyString
-  dob: 2016-01-18
-  cardnumber: MyString
+  phoneNo: MyString
+  accounNumber: MyString
+  balance: 1.5
+  dob: 2016-01-19
+  cardNumber: MyString
   pin: MyString

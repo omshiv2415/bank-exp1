@@ -16,13 +16,18 @@
 </p>
 
 <p>
-  <strong>Phone:</strong>
-  <%= @customer.phone %>
+  <strong>Phoneno:</strong>
+  <%= @customer.phoneNo %>
 </p>
 
 <p>
-  <strong>Accountnumber:</strong>
-  <%= @customer.accountnumber %>
+  <strong>Accounnumber:</strong>
+  <%= @customer.accounNumber %>
+</p>
+
+<p>
+  <strong>Balance:</strong>
+  <%= @customer.balance %>
 </p>
 
 <p>
@@ -31,23 +36,13 @@
 </p>
 
 <p>
-  <strong>Balance:</strong>
-	<%= @customer.accountBalance %>
-</p>
-
-<p>
   <strong>Cardnumber:</strong>
-  <%= @customer.cardnumber %>
+  <%= @customer.cardNumber %>
 </p>
 
 <p>
   <strong>Pin:</strong>
   <%= @customer.pin %>
-</p>
-
-<p>
-  <strong>ID:</strong>
-	<%= @customer.id %>
 </p>
 
 <%= link_to 'Edit', edit_customer_path(@customer) %> |

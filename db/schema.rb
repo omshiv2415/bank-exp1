@@ -16,7 +16,7 @@ ActiveRecord::Schema.define(version: 20160119123501) do
   create_table "accounts", force: :cascade do |t|
     t.integer  "customerId"
     t.string   "accountType"
-    t.float    "accountBalance"
+		t.float    "accountBalance"
     t.integer  "branch_id"
     t.datetime "created_at",     null: false
     t.datetime "updated_at",     null: false
@@ -31,20 +31,6 @@ ActiveRecord::Schema.define(version: 20160119123501) do
     t.string   "branchCode"
     t.datetime "created_at",     null: false
     t.datetime "updated_at",     null: false
-  end
-
-  create_table "customers", force: :cascade do |t|
-    t.string   "name"
-    t.text     "email"
-    t.text     "address"
-    t.string   "phone"
-    t.string   "accountnumber"
-    t.date     "dob"
-    t.string   "cardnumber"
-    t.string   "pin"
-    t.datetime "created_at",    null: false
-    t.datetime "updated_at",    null: false
-    t.float    "balance"
   end
 
   create_table "employees", force: :cascade do |t|
@@ -64,13 +50,28 @@ ActiveRecord::Schema.define(version: 20160119123501) do
     t.string   "transType"
     t.string   "transMethod"
     t.string   "transDescription"
-    t.integer  "transAccoung_id"
+    t.integer  "transAccount_id"
     t.integer  "transEmployee_id"
     t.datetime "created_at",       null: false
     t.datetime "updated_at",       null: false
   end
 
-  add_index "transactions", ["transAccoung_id"], name: "index_transactions_on_transAccoung_id"
+  add_index "transactions", ["transAccount_id"], name: "index_transactions_on_transAccoung_id"
   add_index "transactions", ["transEmployee_id"], name: "index_transactions_on_transEmployee_id"
+
+	create_table "customers", force: :cascade do |t|
+    t.string   "name"
+    t.text     "email"
+    t.text     "address"
+    t.string   "phoneNo"
+    t.string   "accountNumber"
+		t.float    "balance"
+    t.date     "dob"
+    t.string   "cardnumber"
+    t.string   "pin"
+    t.datetime "created_at",    null: false
+    t.datetime "updated_at",    null: false
+
+  end
 
 end

@@ -1,1 +1,1 @@
-json.extract! @customer, :id, :name, :email, :address, :phone, :accountnumber, :dob, :accountBalance, :cardnumber, :pin, :created_at, :updated_at
+json.extract! @customer, :id, :name, :email, :address, :phoneNo, :accounNumber, :balance, :dob, :cardNumber, :pin, :created_at, :updated_at
